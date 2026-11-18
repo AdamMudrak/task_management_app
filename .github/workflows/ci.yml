@@ -159,7 +159,7 @@ jobs:
               -e DROPBOX_KEY="$DROPBOX_KEY" \
               -e DROPBOX_SECRET="$DROPBOX_SECRET" \
               -e SERVER_PATH="$SERVER_PATH" \
-              -p "$APP_PORT:$APP_PORT" \
+              -p "127.0.0.1:$APP_PORT:$APP_PORT" \
               "$IMAGE_NAME:latest"
 
             rm -f "$TARGET/$APP_NAME.tar"
